@@ -30,7 +30,13 @@ $color-venetian-red:                 #b80027;
 
 // Gradient
 
-$black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+$circle-blue-to-red: conic-gradient(
+  from 130deg at 16% 39%,
+  $color-venetian-red -47deg,
+  $color-dark-cerulean 32deg,
+  $color-venetian-red 313deg,
+  $color-dark-cerulean 392deg
+);
 
 // Typography
 // ---------------------------------

@@ -18,14 +18,36 @@
 
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
+      <header class="header">
+        <div class="header__wrapper container">
+          <div class="header__section">
+            <a class="header__logo">
+              <svg width="122" height="44" role="img" aria-label="Логотип «Круизы в Антарктику».">
+                <use xlink:href="./img/sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <a class="header__phone" href="tel:88005555555">8-800-555-55-55</a>
+          </div>
+
+          <section class="header__section intro">
+            <h1 class="intro__title">Фитнес центр</h1>
+            <p class="intro__city">Омск</p>
+            <ul class="intro__list">
+              <li class="intro__item">Тренажёрный зал</li>
+              <li class="intro__item">Групповые занятия</li>
+              <li class="intro__item">Кардио-зона</li>
+            </ul>
+            <a class="intro__link button" href="#todo">Купить абонемент</a>
+          </section>
+        </div>
       </header>
+
       <main>
         <section class="intro">
           <div class="container"></div>
         </section>
       </main>
+
       <footer>
         <div class="container"></div>
       </footer>
