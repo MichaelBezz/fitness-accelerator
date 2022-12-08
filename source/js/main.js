@@ -1,4 +1,5 @@
 import {iosVhFix} from './utils/ios-vh-fix';
+import {webpChecker} from './utils/webp-checker';
 import {initModals} from './modules/modals/init-modals';
 
 // ---------------------------------
@@ -9,6 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  webpChecker();
 
   // Modules
   // ---------------------------------
