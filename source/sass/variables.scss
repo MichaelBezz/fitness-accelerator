@@ -30,8 +30,24 @@ $color-venetian-red:                 #b80027;
 
 // Gradient
 
-$circle-blue-to-red: conic-gradient(
+$conic-gradient-blue-to-red-desktop: conic-gradient(
   from 130deg at 16% 39%,
+  $color-venetian-red -47deg,
+  $color-dark-cerulean 32deg,
+  $color-venetian-red 313deg,
+  $color-dark-cerulean 392deg
+);
+
+$conic-gradient-blue-to-red-tablet: conic-gradient(
+  from 139deg at 21% 36%,
+  $color-venetian-red -47deg,
+  $color-dark-cerulean 32deg,
+  $color-venetian-red 313deg,
+  $color-dark-cerulean 392deg
+);
+
+$conic-gradient-blue-to-red-mobile: conic-gradient(
+  from 171deg at 35% 34%,
   $color-venetian-red -47deg,
   $color-dark-cerulean 32deg,
   $color-venetian-red 313deg,

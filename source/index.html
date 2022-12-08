@@ -22,22 +22,29 @@
         <div class="header__wrapper container">
           <div class="header__section">
             <a class="header__logo">
-              <svg width="122" height="44" role="img" aria-label="Логотип «Круизы в Антарктику».">
-                <use xlink:href="./img/sprite.svg#logo"></use>
-              </svg>
+              <img src="./img/svg/logo.svg" width="122" height="44" alt="Логотип фитнес центр «Supergym».">
             </a>
             <a class="header__phone" href="tel:88005555555">8-800-555-55-55</a>
           </div>
 
-          <section class="header__section intro">
-            <h1 class="intro__title">Фитнес центр</h1>
-            <p class="intro__city">Омск</p>
-            <ul class="intro__list">
-              <li class="intro__item">Тренажёрный зал</li>
-              <li class="intro__item">Групповые занятия</li>
-              <li class="intro__item">Кардио-зона</li>
-            </ul>
-            <a class="intro__link button" href="#todo">Купить абонемент</a>
+          <section class="header__intro intro">
+            <div class="intro__description">
+              <h1 class="intro__title">Фитнес центр</h1>
+              <p class="intro__city">Омск</p>
+              <ul class="intro__list">
+                <li class="intro__item">Тренажёрный зал</li>
+                <li class="intro__item">Групповые занятия</li>
+                <li class="intro__item">Кардио-зона</li>
+              </ul>
+              <a class="intro__link button" href="#todo" data-smooth-link>Купить абонемент</a>
+            </div>
+
+            <div class="intro__image">
+              <picture>
+                <source type="image/webp" srcset="./img/background/intro.webp 1x, ./img/background/intro@2x.webp 2x">
+                <img src="./img/background/intro.jpg" srcset="./img/background/intro@2x.jpg 2x" width="500" height="556" alt="Человек похожий на супергероя.">
+              </picture>
+            </div>
           </section>
         </div>
       </header>
