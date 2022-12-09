@@ -1,14 +1,14 @@
 .header {
   min-width: 320px;
   background-color: $color-dark-cerulean;
-  background-image: $conic-gradient-blue-to-red-desktop;
+  background-image: $blue-to-red-intro-desktop;
 
   @include vp-1199 {
-    background-image: $conic-gradient-blue-to-red-tablet;
+    background-image: $blue-to-red-intro-tablet;
   }
 
   @include vp-767 {
-    background-image: $conic-gradient-blue-to-red-mobile;
+    background-image: $blue-to-red-intro-mobile;
   }
 }
 
