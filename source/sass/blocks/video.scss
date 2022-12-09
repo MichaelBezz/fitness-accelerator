@@ -86,12 +86,12 @@
   }
 }
 
-/* Классы для javaScript */
+/* Классы для JavaScript */
 
-.is-available {
+.video.is-available {
   cursor: pointer;
 }
 
-.is-available .video__button {
+.video__button.is-available {
   display: block;
 }

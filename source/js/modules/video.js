@@ -39,6 +39,7 @@ const setupVideoPlayer = (player) => {
 
   link.removeAttribute('href');
   player.classList.add('is-available');
+  button.classList.add('is-available');
 };
 
 export const initializeVideoPlayers = () => {
