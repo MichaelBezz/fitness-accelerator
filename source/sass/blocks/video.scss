@@ -1,0 +1,97 @@
+.video__wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 62.8%;
+
+  @include vp-767 {
+    padding-top: 52%;
+  }
+}
+
+.video__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba($color-dark-cerulean, 0.5);
+  }
+}
+
+.video__media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video__button {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  padding: 0;
+  background-color: $color-transparent;
+  background-image: url("../img/decor/video-button.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 0;
+  transition: transform $trans-default;
+  cursor: pointer;
+
+  .js-webp-exception & {
+    background-image: url("../img/decor/video-button.jpg");
+  }
+
+  @include retina {
+    background-image: url("../img/decor/video-button@2x.webp");
+
+    .js-webp-exception & {
+      background-image: url("../img/decor/video-button@2x.jpg");
+    }
+  }
+
+  @include vp-1199 {
+    width: 73px;
+    height: 73px;
+  }
+
+  @include hover-focus {
+    transform: scale(1.1);
+  }
+
+  @include active {
+    opacity: 0.8;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+/* Классы для javaScript */
+
+.is-available {
+  cursor: pointer;
+}
+
+.is-available .video__button {
+  display: block;
+}

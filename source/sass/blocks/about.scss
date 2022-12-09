@@ -1,0 +1,159 @@
+.about {
+  min-width: 320px;
+}
+
+.about__wrapper {
+  display: grid;
+  grid-template-columns: 480px minmax(560px, 660px);
+  column-gap: 20px;
+  padding: 120px 60px 6px;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    padding: 101px 45px 52px;
+  }
+
+  @include vp-767 {
+    padding: 64px 0 52px;
+  }
+}
+
+.about__section {
+  padding: 39px 60px 0;
+
+  @include vp-1199 {
+    padding: 0;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+  }
+}
+
+.about__title {
+  margin-bottom: 8px;
+
+  @include vp-1199 {
+    margin-bottom: 0;
+    margin-left: -16px;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    margin-bottom: 5px;
+    margin-left: 0;
+    text-align: start;
+  }
+}
+
+.about__subtitle {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: $color-sapphire;
+
+  @include vp-1199 {
+    margin-bottom: 34px;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    margin-bottom: 23px;
+    text-align: start;
+  }
+}
+
+.about__description {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
+  color: $color-sapphire;
+
+  @include vp-1199 {
+    max-width: 85%;
+    margin: 0 auto;
+    margin-bottom: 42px;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    max-width: 90%;
+    margin: 0;
+    margin-bottom: 33px;
+    text-align: start;
+  }
+}
+
+.about__text {
+  margin: 0;
+}
+
+.about__text:not(:last-child) {
+  margin-bottom: 8px;
+
+  @include vp-1199 {
+    margin-bottom: 0;
+  }
+}
+
+.about__text--additional {
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.about__image {
+  position: relative;
+  width: 100%;
+
+  &::before {
+    display: block;
+    content: "";
+    padding-top: 60.8%;
+  }
+
+  @include vp-1199 {
+    &::before {
+      padding-top: 51%;
+    }
+  }
+
+  @include vp-767 {
+    margin-bottom: 40px;
+
+    &::before {
+      padding-top: 98%;
+    }
+  }
+}
+
+.about__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.about__video {
+  position: relative;
+  top: -113px;
+  left: -63px;
+  width: 55.2%;
+
+  @include vp-1199 {
+    top: -85px;
+    left: 50%;
+    width: 39.3%;
+    transform: translateX(-50%);
+  }
+
+  @include vp-767 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: none;
+  }
+}
