@@ -1,5 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {webpChecker} from './utils/webp-checker';
+import {initializeSmoothScroll} from './utils/scroll-smooth';
 import {initializeVideoPlayers} from './modules/video';
 import {initModals} from './modules/modals/init-modals';
 
@@ -12,6 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
   webpChecker();
+  initializeSmoothScroll();
 
   // Modules
   // ---------------------------------
