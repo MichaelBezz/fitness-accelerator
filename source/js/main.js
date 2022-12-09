@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {webpChecker} from './utils/webp-checker';
 import {initializeSmoothScroll} from './utils/scroll-smooth';
 import {initializeVideoPlayers} from './modules/video';
+import {initializeTabs} from './modules/tabs';
 import {initModals} from './modules/modals/init-modals';
 
 // ---------------------------------
@@ -23,6 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initModals();
     initializeVideoPlayers();
+    initializeTabs();
   });
 });
 

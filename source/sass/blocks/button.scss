@@ -24,6 +24,17 @@
     opacity: 0.6;
   }
 
+  &--colored {
+    color: $color-sapphire;
+    border: 2px solid $color-sapphire;
+
+    @include hover-focus {
+      color: $color-default-white;
+      background-image: $red-to-blue-button;
+      border-color: $color-default-white;
+    }
+  }
+
   &:disabled {
     opacity: 0.5;
     pointer-events: none;

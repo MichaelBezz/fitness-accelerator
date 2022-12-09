@@ -31,7 +31,7 @@ $color-venetian-red:                 #b80027;
 
 // Gradient
 
-$conic-gradient-blue-to-red-desktop: conic-gradient(
+$blue-to-red-intro-desktop: conic-gradient(
   from 130deg at 16% 39%,
   $color-venetian-red -47deg,
   $color-dark-cerulean 32deg,
@@ -39,7 +39,7 @@ $conic-gradient-blue-to-red-desktop: conic-gradient(
   $color-dark-cerulean 392deg
 );
 
-$conic-gradient-blue-to-red-tablet: conic-gradient(
+$blue-to-red-intro-tablet: conic-gradient(
   from 139deg at 21% 36%,
   $color-venetian-red -47deg,
   $color-dark-cerulean 32deg,
@@ -47,13 +47,16 @@ $conic-gradient-blue-to-red-tablet: conic-gradient(
   $color-dark-cerulean 392deg
 );
 
-$conic-gradient-blue-to-red-mobile: conic-gradient(
+$blue-to-red-intro-mobile: conic-gradient(
   from 171deg at 35% 34%,
   $color-venetian-red -47deg,
   $color-dark-cerulean 32deg,
   $color-venetian-red 313deg,
   $color-dark-cerulean 392deg
 );
+
+$red-to-blue-card: linear-gradient(140deg, $color-crimson, $color-smalt 100%);
+$red-to-blue-button: linear-gradient(97deg, $color-torch-red 18%, $color-cobalt-darker 95%);
 
 // Typography
 // ---------------------------------
