@@ -47,25 +47,13 @@
   margin: auto;
   padding: 0;
   background-color: $color-transparent;
-  background-image: url("../img/decor/video-button.webp");
+  background-image: url("../img/sprite/video-button.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border: 0;
   transition: transform $trans-default;
   cursor: pointer;
-
-  .js-webp-exception & {
-    background-image: url("../img/decor/video-button.jpg");
-  }
-
-  @include retina {
-    background-image: url("../img/decor/video-button@2x.webp");
-
-    .js-webp-exception & {
-      background-image: url("../img/decor/video-button@2x.jpg");
-    }
-  }
 
   @include vp-1199 {
     width: 73px;
