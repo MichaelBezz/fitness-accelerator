@@ -3,6 +3,7 @@ import {webpChecker} from './utils/webp-checker';
 import {initializeSmoothScroll} from './utils/scroll-smooth';
 import {initializeVideoPlayers} from './modules/video';
 import {initializeTabs} from './modules/tabs';
+import {initializeSwipers} from './modules/swiper';
 import {initModals} from './modules/modals/init-modals';
 
 // ---------------------------------
@@ -25,6 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initModals();
     initializeVideoPlayers();
     initializeTabs();
+    initializeSwipers();
   });
 });
 

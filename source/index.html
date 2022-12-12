@@ -92,7 +92,9 @@
                     </picture>
                   </a>
 
-                  <button class="video__button" type="button" aria-label="Воспроизвести видео." data-video="button"></button>
+                  <button class="video__button" type="button" data-video="button">
+                    <span class="visually-hidden">Воспроизвести видео.</span>
+                  </button>
                 </div>
               </div>
             </div>
@@ -243,6 +245,169 @@
                 <source media="(min-width: 1200px)" type="image/webp" srcset="./img/content/competition-desktop.webp 1x, ./img/content/competition-desktop@2x.webp 2x">
                 <img src="./img/content/competition-desktop.jpg" srcset="./img/content/competition-desktop@2x.jpg 2x" width="386" height="292" alt="Атлетически сложенный мужчина магнезит руки.">
               </picture>
+            </div>
+          </div>
+        </section>
+
+        <section class="coaches">
+          <div class="coaches__wrapper container">
+            <h2 class="coaches__title title">Тренеры</h2>
+
+            <div class="coaches__content">
+              <button class="coaches__toggle coaches__toggle--previous" type="button">
+                <span class="visually-hidden">Предыдущий слайд.</span>
+                <svg class="coaches__toggle-icon coaches__toggle-icon--previous" width="16" height="32" aria-hidden="true" focusable="false">
+                  <use xlink:href="./img/sprite.svg#arrow-button"></use>
+                </svg>
+              </button>
+
+              <div class="coaches__swiper swiper">
+                <ul class="coaches__list swiper-wrapper">
+                  <li class="coaches__item coach-card swiper-slide" tabindex="0">
+                    <div class="coach-card__hover">
+                      <h3 class="coach-card__title">Анна Павлова</h3>
+                      <p class="coach-card__type">CrossFit</p>
+                      <ul class="coach-card__description">
+                        <li class="coach-card__property">Certified Level 3 Trainer</li>
+                        <li class="coach-card__property">Победитель чемпионата России по CrossFit</li>
+                        <li class="coach-card__property">Опыт — 6 лет</li>
+                      </ul>
+                    </div>
+                    <div class="coach-card__image">
+                      <picture>
+                        <source type="image/webp" srcset="./img/coaches/anna-pavlova.webp 1x, ./img/coaches/anna-pavlova@2x.webp 2x">
+                        <img src="./img/coaches/anna-pavlova.jpg" srcset="./img/coaches/anna-pavlova@2x.jpg 2x" width="260" height="294" alt="Тренер Анна Павлова.">
+                      </picture>
+                    </div>
+                  </li>
+                  <li class="coaches__item coach-card swiper-slide" tabindex="0">
+                    <div class="coach-card__hover">
+                      <h3 class="coach-card__title">Алексей Лавров</h3>
+                      <p class="coach-card__type">CrossFit</p>
+                      <ul class="coach-card__description">
+                        <li class="coach-card__property">Certified Level 3 Trainer</li>
+                        <li class="coach-card__property">Победитель чемпионата России по CrossFit</li>
+                        <li class="coach-card__property">Опыт — 6 лет</li>
+                      </ul>
+                    </div>
+                    <div class="coach-card__image">
+                      <picture>
+                        <source type="image/webp" srcset="./img/coaches/alexey-lavrov.webp 1x, ./img/coaches/alexey-lavrov@2x.webp 2x">
+                        <img src="./img/coaches/alexey-lavrov.jpg" srcset="./img/coaches/alexey-lavrov@2x.jpg 2x" width="260" height="294" alt="Тренер Алексей Лавров.">
+                      </picture>
+                    </div>
+                  </li>
+                  <li class="coaches__item coach-card swiper-slide" tabindex="0">
+                    <div class="coach-card__hover">
+                      <h3 class="coach-card__title">Александр Пашков</h3>
+                      <p class="coach-card__type">CrossFit</p>
+                      <ul class="coach-card__description">
+                        <li class="coach-card__property">Certified Level 3 Trainer</li>
+                        <li class="coach-card__property">Победитель чемпионата России по CrossFit</li>
+                        <li class="coach-card__property">Опыт — 6 лет</li>
+                      </ul>
+                    </div>
+                    <div class="coach-card__image">
+                      <picture>
+                        <source type="image/webp" srcset="./img/coaches/alexander-pashkov.webp 1x, ./img/coaches/alexander-pashkov@2x.webp 2x">
+                        <img src="./img/coaches/alexander-pashkov.jpg" srcset="./img/coaches/alexander-pashkov@2x.jpg 2x" width="260" height="294" alt="Тренер Александр Пашков.">
+                      </picture>
+                    </div>
+                  </li>
+                  <li class="coaches__item coach-card swiper-slide" tabindex="0">
+                    <div class="coach-card__hover">
+                      <h3 class="coach-card__title">Мария Кетова</h3>
+                      <p class="coach-card__type">CrossFit</p>
+                      <ul class="coach-card__description">
+                        <li class="coach-card__property">Certified Level 3 Trainer</li>
+                        <li class="coach-card__property">Победитель чемпионата России по CrossFit</li>
+                        <li class="coach-card__property">Опыт — 6 лет</li>
+                      </ul>
+                    </div>
+                    <div class="coach-card__image">
+                      <picture>
+                        <source type="image/webp" srcset="./img/coaches/maria-ketova.webp 1x, ./img/coaches/maria-ketova@2x.webp 2x">
+                        <img src="./img/coaches/maria-ketova.jpg" srcset="./img/coaches/maria-ketova@2x.jpg 2x" width="260" height="294" alt="Тренер Мария Кетова.">
+                      </picture>
+                    </div>
+                  </li>
+                  <li class="coaches__item coach-card swiper-slide" tabindex="0">
+                    <div class="coach-card__hover">
+                      <h3 class="coach-card__title">Анна Павлова</h3>
+                      <p class="coach-card__type">CrossFit</p>
+                      <ul class="coach-card__description">
+                        <li class="coach-card__property">Certified Level 3 Trainer</li>
+                        <li class="coach-card__property">Победитель чемпионата России по CrossFit</li>
+                        <li class="coach-card__property">Опыт — 6 лет</li>
+                      </ul>
+                    </div>
+                    <div class="coach-card__image">
+                      <picture>
+                        <source type="image/webp" srcset="./img/coaches/anna-pavlova.webp 1x, ./img/coaches/anna-pavlova@2x.webp 2x">
+                        <img src="./img/coaches/anna-pavlova.jpg" srcset="./img/coaches/anna-pavlova@2x.jpg 2x" width="260" height="294" alt="Тренер Анна Павлова.">
+                      </picture>
+                    </div>
+                  </li>
+                  <li class="coaches__item coach-card swiper-slide" tabindex="0">
+                    <div class="coach-card__hover">
+                      <h3 class="coach-card__title">Алексей Лавров</h3>
+                      <p class="coach-card__type">CrossFit</p>
+                      <ul class="coach-card__description">
+                        <li class="coach-card__property">Certified Level 3 Trainer</li>
+                        <li class="coach-card__property">Победитель чемпионата России по CrossFit</li>
+                        <li class="coach-card__property">Опыт — 6 лет</li>
+                      </ul>
+                    </div>
+                    <div class="coach-card__image">
+                      <picture>
+                        <source type="image/webp" srcset="./img/coaches/alexey-lavrov.webp 1x, ./img/coaches/alexey-lavrov@2x.webp 2x">
+                        <img src="./img/coaches/alexey-lavrov.jpg" srcset="./img/coaches/alexey-lavrov@2x.jpg 2x" width="260" height="294" alt="Тренер Алексей Лавров.">
+                      </picture>
+                    </div>
+                  </li>
+                  <li class="coaches__item coach-card swiper-slide" tabindex="0">
+                    <div class="coach-card__hover">
+                      <h3 class="coach-card__title">Александр Пашков</h3>
+                      <p class="coach-card__type">CrossFit</p>
+                      <ul class="coach-card__description">
+                        <li class="coach-card__property">Certified Level 3 Trainer</li>
+                        <li class="coach-card__property">Победитель чемпионата России по CrossFit</li>
+                        <li class="coach-card__property">Опыт — 6 лет</li>
+                      </ul>
+                    </div>
+                    <div class="coach-card__image">
+                      <picture>
+                        <source type="image/webp" srcset="./img/coaches/alexander-pashkov.webp 1x, ./img/coaches/alexander-pashkov@2x.webp 2x">
+                        <img src="./img/coaches/alexander-pashkov.jpg" srcset="./img/coaches/alexander-pashkov@2x.jpg 2x" width="260" height="294" alt="Тренер Александр Пашков.">
+                      </picture>
+                    </div>
+                  </li>
+                  <li class="coaches__item coach-card swiper-slide" tabindex="0">
+                    <div class="coach-card__hover">
+                      <h3 class="coach-card__title">Мария Кетова</h3>
+                      <p class="coach-card__type">CrossFit</p>
+                      <ul class="coach-card__description">
+                        <li class="coach-card__property">Certified Level 3 Trainer</li>
+                        <li class="coach-card__property">Победитель чемпионата России по CrossFit</li>
+                        <li class="coach-card__property">Опыт — 6 лет</li>
+                      </ul>
+                    </div>
+                    <div class="coach-card__image">
+                      <picture>
+                        <source type="image/webp" srcset="./img/coaches/maria-ketova.webp 1x, ./img/coaches/maria-ketova@2x.webp 2x">
+                        <img src="./img/coaches/maria-ketova.jpg" srcset="./img/coaches/maria-ketova@2x.jpg 2x" width="260" height="294" alt="Тренер Мария Кетова.">
+                      </picture>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <button class="coaches__toggle coaches__toggle--next" type="button">
+                <span class="visually-hidden">Следующий слайд.</span>
+                <svg class="coaches__toggle-icon coaches__toggle-icon--next" width="16" height="32" aria-hidden="true" focusable="false">
+                  <use xlink:href="./img/sprite.svg#arrow-button"></use>
+                </svg>
+              </button>
             </div>
           </div>
         </section>
