@@ -39,6 +39,16 @@
   position: relative;
 }
 
+.coaches__swiper {
+  margin: -30px;
+  padding: 30px;
+
+  @include vp-767 {
+    margin: -20px;
+    padding: 20px;
+  }
+}
+
 .coaches__list {
   margin: 0;
   padding: 0;
