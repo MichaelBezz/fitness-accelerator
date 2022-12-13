@@ -7,7 +7,7 @@
   border: 7px solid $color-default-white;
 
   @include hover {
-    border-image-source: $red-to-blue-card;
+    border-image-source: $red-to-blue-subscription-card;
     border-image-slice: 1;
   }
 
@@ -17,7 +17,7 @@
 }
 
 .subscription-card:focus-within {
-  border-image-source: $red-to-blue-card;
+  border-image-source: $red-to-blue-subscription-card;
   border-image-slice: 1;
 }
 
