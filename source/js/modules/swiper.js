@@ -1,4 +1,5 @@
 const coachesSection = document.querySelector('.coaches');
+const reviewsSection = document.querySelector('.reviews');
 
 const createSwiper = (selector, options = {}) =>
   new window.Swiper(selector, options);
@@ -31,6 +32,18 @@ export const initializeSwipers = () => {
         nextEl: '.coaches__toggle--next',
         prevEl: '.coaches__toggle--previous',
         disabledClass: '.coaches__toggle--disabled',
+      },
+    });
+  }
+
+  if (reviewsSection) {
+    createSwiper('.reviews__swiper', {
+      autoHeight: true,
+      loop: false,
+      navigation: {
+        nextEl: '.reviews__toggle--next',
+        prevEl: '.reviews__toggle--previous',
+        disabledClass: '.reviews__toggle--disabled',
       },
     });
   }
