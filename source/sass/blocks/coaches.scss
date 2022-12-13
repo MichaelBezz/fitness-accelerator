@@ -22,9 +22,11 @@
 
 .coaches__title {
   margin-bottom: 47px;
+  margin-left: 2px;
 
   @include vp-1199 {
     margin-bottom: 31px;
+    margin-left: -6px;
     text-align: center;
   }
 
