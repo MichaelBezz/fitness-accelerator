@@ -35,12 +35,8 @@
     }
   }
 
-  &:disabled {
-    opacity: 0.5;
-    pointer-events: none;
-  }
-
   // Использовать класс, если в качестве <button> использован тег <a>
+  &:disabled,
   &--disabled {
     opacity: 0.5;
     pointer-events: none;

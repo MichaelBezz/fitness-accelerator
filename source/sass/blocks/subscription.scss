@@ -124,6 +124,14 @@
     background-color: $color-crimson;
   }
 
+  @include hover-focus {
+    color: $color-dark-cerulean;
+  }
+
+  @include active {
+    color: $color-black-russian;
+  }
+
   @include vp-1199 {
     font-size: 18px;
   }

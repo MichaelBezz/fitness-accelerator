@@ -69,6 +69,7 @@
   border: 0;
   cursor: pointer;
 
+  &:disabled,
   &--disabled {
     opacity: 0.5;
     pointer-events: none;
@@ -94,6 +95,16 @@
       right: -47px;
     }
   }
+}
+
+.coaches__toggle:hover .coaches__toggle-icon,
+.coaches__toggle:focus-visible .coaches__toggle-icon {
+  stroke: $color-dark-cerulean;
+}
+
+.coaches__toggle:active .coaches__toggle-icon {
+  opacity: 0.8;
+  stroke: $color-black-russian;
 }
 
 .coaches__toggle-icon {
