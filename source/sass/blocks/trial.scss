@@ -1,0 +1,64 @@
+.trial {
+  position: relative;
+  background-color: $color-sapphire;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0;
+    content: "";
+    height: 100%;
+    width: 100vw;
+    background-color: $color-sapphire;
+  }
+
+  &::before {
+    right: 100%;
+  }
+
+  &::after {
+    left: 100%;
+    content: initial;
+  }
+
+  @include vp-1199 {
+    &::after {
+      content: "";
+    }
+  }
+}
+
+.trial__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 57px 0 69px;
+  padding-right: 57px;
+
+  @include vp-1199 {
+    padding: 55px 17% 68px 13%;
+  }
+
+  @include vp-767 {
+    padding: 59px 0 69px;
+  }
+}
+
+.trial__title {
+  margin-bottom: 18px;
+
+  @include vp-1199 {
+    margin-bottom: 25px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 29px;
+  }
+}
+
+.trial__form {
+  width: 79%;
+
+  @include vp-1279 {
+    width: 100%;
+  }
+}

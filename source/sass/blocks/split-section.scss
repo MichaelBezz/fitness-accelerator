@@ -1,0 +1,14 @@
+.split-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-width: 320px;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr;
+    max-width: 1000px;
+  }
+
+  @include vp-767 {
+    max-width: 500px;
+  }
+}

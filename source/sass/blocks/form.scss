@@ -1,0 +1,66 @@
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 28px;
+
+  @include vp-1199 {
+    column-gap: 60px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 31px;
+  }
+}
+
+.form__control {
+  margin: 0;
+}
+
+.form__control input {
+  width: 100%;
+  padding: 6px;
+  padding-left: 0;
+  font-size: 14px;
+  line-height: 1.15;
+  color: $color-spindle;
+  background-color: $color-transparent;
+  border: 0;
+  border-bottom: 1px solid $color-light-slate-grey;
+
+  @include hover-focus {
+    border-color: $color-torch-red;
+
+    &::placeholder {
+      color: $color-torch-red;
+    }
+  }
+
+  @include active {
+    border-color: $color-venetian-red;
+
+    &::placeholder {
+      color: $color-venetian-red;
+    }
+  }
+}
+
+.form__control input::placeholder {
+  font-size: 14px;
+  line-height: 1.15;
+  color: $color-default-white;
+}
+
+.form__button {
+  grid-column: 1/-1;
+  width: 100%;
+  padding: 17px 20px 16px;
+  font-size: 14px;
+  border-width: 3px;
+
+  @include vp-767 {
+    margin-top: 6px;
+  }
+}

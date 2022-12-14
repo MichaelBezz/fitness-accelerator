@@ -12,11 +12,25 @@
     font-size: 48px;
   }
 
+  &--inverse {
+    line-height: 1.5;
+    font-weight: 800;
+    color: $color-default-white;
+  }
+
   @include vp-1199 {
     font-size: 42px;
+
+    &--inverse {
+      font-weight: 700;
+    }
   }
 
   @include vp-767 {
     font-size: 32px;
+
+    &--inverse {
+      font-weight: 600;
+    }
   }
 }

@@ -1,9 +1,11 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {webpChecker} from './utils/webp-checker';
 import {initializeSmoothScroll} from './utils/scroll-smooth';
+import {initializeLocalStorage} from './utils/local-storage';
 import {initializeVideoPlayers} from './modules/video';
 import {initializeTabs} from './modules/tabs';
 import {initializeSwipers} from './modules/swiper';
+import {initializeFormValidation} from './modules/form';
 import {initModals} from './modules/modals/init-modals';
 
 // ---------------------------------
@@ -16,6 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
   webpChecker();
   initializeSmoothScroll();
+  initializeLocalStorage();
 
   // Modules
   // ---------------------------------
@@ -27,6 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initializeVideoPlayers();
     initializeTabs();
     initializeSwipers();
+    initializeFormValidation();
   });
 });
 
