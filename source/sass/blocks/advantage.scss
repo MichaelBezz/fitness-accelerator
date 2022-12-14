@@ -44,7 +44,7 @@
 
   @include vp-1199 {
     &::after {
-      content: inherit;
+      content: initial;
     }
   }
 }
@@ -161,8 +161,8 @@
   font-weight: 700;
   color: $color-default-white;
   background-image: none;
-  background-clip: inherit;
-  -webkit-text-fill-color: inherit;
+  background-clip: initial;
+  -webkit-text-fill-color: initial;
 
   @include vp-1199 {
     padding-left: 0;

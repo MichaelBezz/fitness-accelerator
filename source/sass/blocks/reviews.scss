@@ -3,16 +3,16 @@
 }
 
 .reviews__wrapper {
-  padding: 58px 60px 60px;
+  padding: 58px 60px 120px;
 
   @include vp-1199 {
     max-width: 1000px;
-    padding: 42px 23px 50px;
+    padding: 42px 23px 100px;
   }
 
   @include vp-767 {
     max-width: 564px;
-    padding: 29px 0 35px;
+    padding: 29px 0 70px;
   }
 }
 
@@ -65,7 +65,7 @@
   row-gap: 12px;
   min-height: 242px;
   padding: 54px 62px 30px;
-  background: $color-resolution-blue;
+  background-color: $color-resolution-blue;
 
   @include vp-1199 {
     padding: 54px 65px 30px;
@@ -153,7 +153,7 @@
   &--disabled {
     opacity: 0.5;
     pointer-events: none;
-    cursor: default;
+    cursor: not-allowed;
   }
 
   @include vp-767 {
