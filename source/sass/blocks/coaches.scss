@@ -147,3 +147,35 @@
     }
   }
 }
+
+/* Классы для JavaScript */
+
+.js-exception .coaches__swiper {
+  overflow: initial;
+}
+
+.js-exception .coaches__list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 260px));
+  column-gap: 40px;
+  row-gap: 40px;
+  margin: 0;
+  padding: 0;
+  transform: none;
+
+  @include vp-1199 {
+    grid-template-columns: repeat(2, minmax(268px, 1fr));
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: minmax(226px, 1fr);
+    column-gap: 0;
+    row-gap: 20px;
+  }
+}
+
+.js-exception .coaches__toggle {
+  display: none;
+}

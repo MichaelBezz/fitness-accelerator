@@ -7,6 +7,9 @@ import {initializeTabs} from './modules/tabs';
 import {initializeSwipers} from './modules/swiper';
 import {initializeFormValidation} from './modules/form';
 
+const exception = document.querySelector('[data-js-exception]');
+exception.classList.remove('js-exception');
+
 window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
