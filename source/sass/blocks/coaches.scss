@@ -40,8 +40,8 @@
 }
 
 .coaches__swiper {
-  margin: -30px;
-  padding: 30px;
+  margin: -28px;
+  padding: 28px;
 
   @include vp-767 {
     margin: -15px;
@@ -70,8 +70,8 @@
 .coaches__toggle {
   z-index: 1;
   position: absolute;
-  top: 30px;
-  bottom: 30px;
+  top: 28px;
+  bottom: 28px;
   display: flex;
   width: 40px;
   padding: 0;
@@ -95,9 +95,9 @@
   }
 
   @include vp-767 {
-    top: 20px;
-    bottom: 20px;
-    width: 37px;
+    top: 15px;
+    bottom: 15px;
+    width: 30px;
 
     &--previous {
       left: -47px;
@@ -122,15 +122,28 @@
 .coaches__toggle-icon {
   width: 24px;
   height: 34px;
-  margin: auto;
+  margin: auto 0;
   stroke: $color-dark-gray;
 
+  &--previous {
+    margin-left: 10px;
+  }
+
   &--next {
+    margin-left: 5px;
     transform: rotate(180deg);
   }
 
   @include vp-767 {
     width: 10px;
     height: 20px;
+
+    &--previous {
+      margin-left: 15px;
+    }
+
+    &--next {
+      margin-left: 5px;
+    }
   }
 }
