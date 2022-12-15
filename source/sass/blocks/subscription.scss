@@ -161,6 +161,7 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(300px, 360px));
   column-gap: 40px;
+  row-gap: 40px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -168,7 +169,6 @@
   @include vp-1199 {
     grid-template-columns: minmax(442px, 650px);
     column-gap: 0;
-    row-gap: 40px;
     padding: 0 118px;
   }
 
