@@ -16,16 +16,19 @@ export const initializeSwipers = () => {
           slidesPerView: 1,
           spaceBetween: 20,
           initialSlide: 2,
+          allowTouchMove: true,
         },
         768: {
           slidesPerView: 2,
           spaceBetween: 30,
           initialSlide: 2,
+          allowTouchMove: true,
         },
         1200: {
           slidesPerView: 4,
           spaceBetween: 40,
           initialSlide: 0,
+          allowTouchMove: false,
         },
       },
       navigation: {

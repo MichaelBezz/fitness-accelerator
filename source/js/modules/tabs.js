@@ -23,6 +23,6 @@ const setupTab = (tab) => {
 
 export const initializeTabs = () => {
   if (tabs) {
-    tabs.forEach((tab) => setupTab(tab));
+    tabs.forEach(setupTab);
   }
 };

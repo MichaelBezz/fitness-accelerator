@@ -44,6 +44,6 @@ const setupVideoPlayer = (player) => {
 
 export const initializeVideoPlayers = () => {
   if (players) {
-    players.forEach((player) => setupVideoPlayer(player));
+    players.forEach(setupVideoPlayer);
   }
 };
