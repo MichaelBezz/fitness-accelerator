@@ -2737,7 +2737,7 @@ button,
 
 .promotions__title {
   text-align: center;
-  margin-bottom: 33px;
+  margin-bottom: 32px;
 }
 
 .promotions__list {
@@ -2924,7 +2924,7 @@ button,
 }
 
 .reviews__title {
-  margin-bottom: 36px;
+  margin-bottom: 37px;
   margin-left: 10px;
   text-align: center;
 }
@@ -3127,7 +3127,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 57px 0 69px;
+  padding: 57px 0 68px;
   padding-right: 57px;
 }
 
@@ -3275,7 +3275,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 57px 0 63px;
+  padding: 57px 0 62px;
   padding-left: 124px;
 }
 
@@ -4371,7 +4371,7 @@ button,
   }
 
   .promotions__title {
-    margin-bottom: 42px;
+    margin-bottom: 41px;
     margin-left: -5px;
   }
 
@@ -4432,7 +4432,7 @@ button,
   }
 
   .reviews__title {
-    margin-bottom: 41px;
+    margin-bottom: 42px;
     margin-left: -2px;
   }
 
