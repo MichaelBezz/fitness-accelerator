@@ -1812,22 +1812,14 @@ button,
 }
 
 .about__image {
-  position: relative;
-  width: 100%;
-}
-
-.about__image::before {
-  content: "";
-  display: block;
-  padding-top: 60.8%;
+  aspect-ratio: 660/401;
 }
 
 .about__image img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  min-width: 100%;
+  width: auto;
+  min-height: 100%;
+  height: auto;
 }
 
 .about__video {
@@ -1837,18 +1829,14 @@ button,
   width: 55.2%;
 }
 
-.video__wrapper {
+.video {
   position: relative;
-  width: 100%;
-  padding-top: 62.8%;
+  aspect-ratio: 364/228;
+  overflow: hidden;
 }
 
 .video__link {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  position: relative;
 }
 
 .video__link::after {
@@ -1862,11 +1850,10 @@ button,
 }
 
 .video__media {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  min-width: 100%;
+  width: auto;
+  min-height: 100%;
+  height: auto;
   border: 0;
 }
 
@@ -3628,17 +3615,21 @@ button,
     display: none;
   }
 
-  .about__image::before {
-    padding-top: 51%;
+  .about__image {
+    aspect-ratio: 678/345;
   }
 
   .about__video {
-    top: -85px;
+    top: -84px;
     left: 50%;
     width: 39.3%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
+  }
+
+  .video {
+    aspect-ratio: 266/167;
   }
 
   .video__button {
@@ -4127,10 +4118,7 @@ button,
 
   .about__image {
     margin-bottom: 40px;
-  }
-
-  .about__image::before {
-    padding-top: 98%;
+    aspect-ratio: 320/313;
   }
 
   .about__video {
@@ -4142,8 +4130,8 @@ button,
     transform: none;
   }
 
-  .video__wrapper {
-    padding-top: 52%;
+  .video {
+    aspect-ratio: 320/167;
   }
 
   .subscription::after {

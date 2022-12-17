@@ -21,7 +21,6 @@ const createIframe = (id) => {
 };
 
 const setupVideoPlayer = (player) => {
-  const container = player.querySelector('[data-video="container"]');
   const link = player.querySelector('[data-video="link"]');
   const button = player.querySelector('[data-video="button"]');
   const id = parseMediaURL(link);
@@ -29,7 +28,7 @@ const setupVideoPlayer = (player) => {
   const iframe = createIframe(id);
 
   player.addEventListener('click', () => {
-    container.appendChild(iframe);
+    player.appendChild(iframe);
   });
 
   iframe.addEventListener('load', () => {
