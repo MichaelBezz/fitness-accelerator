@@ -7,7 +7,7 @@
 
 ### Демонстрация проекта:
 
-["Supergym"](https://michaelbezz.github.io/782277-fitness/) - фитнес центр.
+["Supergym"](https://michaelbezz.github.io/fitness-accelerator/) - фитнес центр.
 
 ---
 
