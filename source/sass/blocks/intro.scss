@@ -141,32 +141,16 @@
   position: relative;
   bottom: 23px;
   width: 71.4%;
+  max-width: 500px;
+  aspect-ratio: 500/556;
 
   @include vp-1199 {
-    width: 100%;
     bottom: 0;
+    width: 100%;
+    aspect-ratio: 324/390;
   }
 
   @include vp-767 {
     display: none;
   }
-}
-
-.intro__image-wrapper {
-  position: relative;
-  padding-top: 111.2%;
-
-  @include vp-1199 {
-    padding-top: 120.1%;
-  }
-}
-
-.intro__image img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }

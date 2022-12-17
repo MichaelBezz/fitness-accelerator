@@ -1761,21 +1761,8 @@ button,
   position: relative;
   bottom: 23px;
   width: 71.4%;
-}
-
-.intro__image-wrapper {
-  position: relative;
-  padding-top: 111.2%;
-}
-
-.intro__image img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  max-width: 500px;
+  aspect-ratio: 500/556;
 }
 
 .about {
@@ -3530,7 +3517,7 @@ button,
   }
 
   .header__wrapper {
-    padding: 35px 45px 82px;
+    padding: 35px 45px 81px;
   }
 
   .header__section {
@@ -3597,12 +3584,9 @@ button,
   }
 
   .intro__image {
-    width: 100%;
     bottom: 0;
-  }
-
-  .intro__image-wrapper {
-    padding-top: 120.1%;
+    width: 100%;
+    aspect-ratio: 324/390;
   }
 
   .about__wrapper {
