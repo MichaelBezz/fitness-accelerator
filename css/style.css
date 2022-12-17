@@ -1761,21 +1761,8 @@ button,
   position: relative;
   bottom: 23px;
   width: 71.4%;
-}
-
-.intro__image-wrapper {
-  position: relative;
-  padding-top: 111.2%;
-}
-
-.intro__image img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  max-width: 500px;
+  aspect-ratio: 500/556;
 }
 
 .about {
@@ -1825,22 +1812,14 @@ button,
 }
 
 .about__image {
-  position: relative;
-  width: 100%;
-}
-
-.about__image::before {
-  content: "";
-  display: block;
-  padding-top: 60.8%;
+  aspect-ratio: 660/401;
 }
 
 .about__image img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  min-width: 100%;
+  width: auto;
+  min-height: 100%;
+  height: auto;
 }
 
 .about__video {
@@ -1850,18 +1829,14 @@ button,
   width: 55.2%;
 }
 
-.video__wrapper {
+.video {
   position: relative;
-  width: 100%;
-  padding-top: 62.8%;
+  aspect-ratio: 364/228;
+  overflow: hidden;
 }
 
 .video__link {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  position: relative;
 }
 
 .video__link::after {
@@ -1875,11 +1850,10 @@ button,
 }
 
 .video__media {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  min-width: 100%;
+  width: auto;
+  min-height: 100%;
+  height: auto;
   border: 0;
 }
 
@@ -2172,7 +2146,9 @@ button,
   display: grid;
   -ms-grid-columns: 43.1% 56.9%;
   grid-template-columns: 43.1% 56.9%;
-  padding: 120px 60px 50px;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+  padding: 121px 60px 50px;
 }
 
 .competition__content {
@@ -2236,17 +2212,16 @@ button,
 }
 
 .competition__image {
-  position: relative;
-  width: 100%;
-  padding-top: 75.7%;
+  height: 100%;
+  aspect-ratio: 660/500;
+  overflow: hidden;
 }
 
 .competition__image img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  min-width: 100%;
+  width: auto;
+  min-height: 100%;
+  height: auto;
 }
 
 .period {
@@ -2762,7 +2737,7 @@ button,
 
 .promotions__title {
   text-align: center;
-  margin-bottom: 33px;
+  margin-bottom: 32px;
 }
 
 .promotions__list {
@@ -2949,7 +2924,7 @@ button,
 }
 
 .reviews__title {
-  margin-bottom: 36px;
+  margin-bottom: 37px;
   margin-left: 10px;
   text-align: center;
 }
@@ -3152,7 +3127,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 57px 0 69px;
+  padding: 57px 0 68px;
   padding-right: 57px;
 }
 
@@ -3300,7 +3275,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 57px 0 63px;
+  padding: 57px 0 62px;
   padding-left: 124px;
 }
 
@@ -3530,7 +3505,7 @@ button,
   }
 
   .header__wrapper {
-    padding: 35px 45px 82px;
+    padding: 35px 45px 81px;
   }
 
   .header__section {
@@ -3597,12 +3572,9 @@ button,
   }
 
   .intro__image {
-    width: 100%;
     bottom: 0;
-  }
-
-  .intro__image-wrapper {
-    padding-top: 120.1%;
+    width: 100%;
+    aspect-ratio: 324/390;
   }
 
   .about__wrapper {
@@ -3644,17 +3616,21 @@ button,
     display: none;
   }
 
-  .about__image::before {
-    padding-top: 51%;
+  .about__image {
+    aspect-ratio: 678/345;
   }
 
   .about__video {
-    top: -85px;
+    top: -84px;
     left: 50%;
     width: 39.3%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
+  }
+
+  .video {
+    aspect-ratio: 266/167;
   }
 
   .video__button {
@@ -3732,7 +3708,7 @@ button,
   }
 
   .competition__image {
-    padding-top: 75.5%;
+    aspect-ratio: 386/292;
   }
 
   .period__item:not(:last-child) {
@@ -4143,10 +4119,7 @@ button,
 
   .about__image {
     margin-bottom: 40px;
-  }
-
-  .about__image::before {
-    padding-top: 98%;
+    aspect-ratio: 320/313;
   }
 
   .about__video {
@@ -4158,8 +4131,8 @@ button,
     transform: none;
   }
 
-  .video__wrapper {
-    padding-top: 52%;
+  .video {
+    aspect-ratio: 320/167;
   }
 
   .subscription::after {
@@ -4239,7 +4212,7 @@ button,
   }
 
   .competition__image {
-    padding-top: 100.6%;
+    aspect-ratio: 290/292;
   }
 
   .coaches__wrapper {
@@ -4398,7 +4371,7 @@ button,
   }
 
   .promotions__title {
-    margin-bottom: 42px;
+    margin-bottom: 41px;
     margin-left: -5px;
   }
 
@@ -4459,7 +4432,7 @@ button,
   }
 
   .reviews__title {
-    margin-bottom: 41px;
+    margin-bottom: 42px;
     margin-left: -2px;
   }
 
