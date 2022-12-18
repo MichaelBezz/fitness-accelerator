@@ -1831,12 +1831,15 @@ button,
 
 .video {
   position: relative;
+  background-color: #14367a;
   aspect-ratio: 364/228;
   overflow: hidden;
 }
 
 .video__link {
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .video__link::after {
