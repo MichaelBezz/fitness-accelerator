@@ -29,16 +29,12 @@ const setupVideoPlayer = (player) => {
 
   player.addEventListener('click', () => {
     player.appendChild(iframe);
-  });
-
-  iframe.addEventListener('load', () => {
     link.remove();
     button.remove();
   });
 
   link.removeAttribute('href');
   player.classList.add('is-available');
-  button.classList.add('is-available');
 };
 
 export const initializeVideoPlayers = () => {
