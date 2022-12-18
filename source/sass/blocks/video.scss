@@ -1,5 +1,6 @@
 .video {
   position: relative;
+  background-color: $color-dark-cerulean;
   aspect-ratio: 364/228;
   overflow: hidden;
 
@@ -14,6 +15,8 @@
 
 .video__link {
   position: relative;
+  width: 100%;
+  height: 100%;
 
   &::after {
     position: absolute;
