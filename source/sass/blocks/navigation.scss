@@ -1,13 +1,10 @@
 .navigation {
-  display: flex;
-  margin-left: 8px;
+  margin-left: 20px;
+  margin-right: 12px;
 
   @include vp-767 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 30px;
     margin: 0;
-    margin-bottom: 33px;
+    margin-bottom: 25px;
   }
 }
 
@@ -18,22 +15,16 @@
   padding: 0;
   list-style-type: none;
 
-  &--main {
-    margin-right: 28px;
-  }
-
-  @include vp-1199 {
-    &--main {
-      margin-right: 18px;
-    }
-  }
-
   @include vp-767 {
-    flex-direction: column;
+    display: block;
+    column-count: 2;
+    column-gap: 30px;
 
-    &--main {
-      margin-top: 40px;
-      margin-right: 0;
+    &::before {
+      display: block;
+      content: "";
+      width: 100%;
+      height: 40px;
     }
   }
 }
