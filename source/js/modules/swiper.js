@@ -4,6 +4,11 @@ const reviewsSection = document.querySelector('.reviews');
 const createSwiper = (selector, options = {}) =>
   new window.Swiper(selector, options);
 
+const removeFocusFromDuplicateSlides = (swiper) => {
+  const duplicateSlides = swiper.querySelectorAll('.swiper-slide-duplicate');
+  duplicateSlides.forEach((item) =>item.removeAttribute('tabindex'));
+};
+
 export const initializeSwipers = () => {
   if (coachesSection) {
     createSwiper('.coaches__swiper', {
@@ -37,6 +42,8 @@ export const initializeSwipers = () => {
         disabledClass: '.coaches__toggle--disabled',
       },
     });
+
+    removeFocusFromDuplicateSlides(coachesSection);
   }
 
   if (reviewsSection) {
