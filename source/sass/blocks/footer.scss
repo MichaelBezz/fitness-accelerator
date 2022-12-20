@@ -28,17 +28,19 @@
   flex: 0 0 auto;
   margin-top: 2px;
 
+  &[href] {
+    @include hover-focus {
+      opacity: 0.8;
+    }
+
+    @include active {
+      opacity: 0.6;
+    }
+  }
+
   @include vp-767 {
     position: absolute;
     top: 48px;
-  }
-
-  @include hover-focus {
-    opacity: 0.8;
-  }
-
-  @include active {
-    opacity: 0.6;
   }
 }
 

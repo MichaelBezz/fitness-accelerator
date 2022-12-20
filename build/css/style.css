@@ -1632,11 +1632,11 @@ button,
   transition: opacity 0.3s ease;
 }
 
-.header__logo.focus-visible:focus {
+.header__logo[href].focus-visible:focus {
   opacity: 0.8;
 }
 
-.header__logo.focus-visible:active {
+.header__logo[href].focus-visible:active {
   opacity: 0.6;
 }
 
@@ -3384,11 +3384,11 @@ button,
   margin-top: 2px;
 }
 
-.footer__logo.focus-visible:focus {
+.footer__logo[href].focus-visible:focus {
   opacity: 0.8;
 }
 
-.footer__logo.focus-visible:active {
+.footer__logo[href].focus-visible:active {
   opacity: 0.6;
 }
 
@@ -4640,7 +4640,7 @@ button,
     border-color: #ffffff;
   }
 
-  .header__logo:hover:not(.focus-visible) {
+  .header__logo[href]:hover:not(.focus-visible) {
     opacity: 0.8;
   }
 
@@ -4712,7 +4712,7 @@ button,
     color: #ed0233;
   }
 
-  .footer__logo:hover:not(.focus-visible) {
+  .footer__logo[href]:hover:not(.focus-visible) {
     opacity: 0.8;
   }
 
