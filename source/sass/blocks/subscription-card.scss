@@ -44,13 +44,13 @@
 
 .subscription-card__description {
   margin: 0;
-  margin-bottom: 57px;
+  margin-bottom: 65px;
   font-size: 16px;
   line-height: 1.5;
   color: $color-chambray;
 
   @include vp-767 {
-    margin-bottom: 47px;
+    margin-bottom: 53px;
   }
 }
 
@@ -66,10 +66,10 @@
   font-weight: 700;
   color: $color-egyptian-blue;
 
-  &::after {
+  &::before {
     z-index: -1;
     position: absolute;
-    top: -22px;
+    top: -28px;
     left: -18px;
     content: attr(data-price);
     font-family: $ff-main;
@@ -80,28 +80,32 @@
     color: rgba($color-whisper, 0.5);
   }
 
+  &::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 42px;
+    margin-left: 14px;
+    background-image: url("../img/sprite/ruble.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
   @include vp-767 {
     margin-bottom: 30px;
     font-size: 48px;
     line-height: 1.5;
 
-    &::after {
+    &::before {
       font-size: 80px;
     }
-  }
-}
 
-.subscription-card__price span {
-  font-family: $ff-rouble;
-  font-style: normal;
-  font-size: 60px;
-  line-height: 1.5;
-  font-weight: 700;
-  color: $color-sapphire;
-  transform: translateX(8px);
-
-  @include vp-767 {
-    font-size: 48px;
+    &::after {
+      width: 24px;
+      height: 33px;
+      margin-left: 10px;
+    }
   }
 }
 

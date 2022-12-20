@@ -66,10 +66,6 @@ $red-to-blue-text: linear-gradient(142deg, $color-crimson, $color-cobalt 87%);
 // переменная используемая в html для подключения скейлинга
 $fz-default:                        16px;
 
-// у некоторых шрифтов в ios возникают проблемы с символом рубля
-// https://www.artlebedev.ru/kovodstvo/sections/159/#13
-$ff-rouble:                         "Rouble", "Arial", sans-serif;
-
 $ff-main:                           "Roboto Condensed", "Arial", sans-serif;
 $ff-secondary:                      "Alumni Sans", "Arial", sans-serif;
 

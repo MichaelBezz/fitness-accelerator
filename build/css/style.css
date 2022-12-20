@@ -1254,14 +1254,6 @@ button.swiper-pagination-bullet {
 }
 
 @font-face {
-  font-family: "Rouble";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/rouble.woff2") format("woff2"), url("../fonts/rouble.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
   font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 300;
@@ -1477,14 +1469,6 @@ button,
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-}
-
-.rouble {
-  font-family: "Rouble", "Arial", sans-serif;
-  /* stylelint-disable */
-  text-transform: lowercase !important;
-  font-weight: 400 !important;
-  /* stylelint-enable */
 }
 
 .visually-hidden {
@@ -2110,7 +2094,7 @@ button,
 
 .subscription-card__description {
   margin: 0;
-  margin-bottom: 57px;
+  margin-bottom: 65px;
   font-size: 16px;
   line-height: 1.5;
   color: #495a7d;
@@ -2133,10 +2117,10 @@ button,
   color: #103aae;
 }
 
-.subscription-card__price::after {
+.subscription-card__price::before {
   z-index: -1;
   position: absolute;
-  top: -22px;
+  top: -28px;
   left: -18px;
   content: attr(data-price);
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -2147,16 +2131,16 @@ button,
   color: rgba(232, 232, 232, 0.5);
 }
 
-.subscription-card__price span {
-  font-family: "Rouble", "Arial", sans-serif;
-  font-style: normal;
-  font-size: 60px;
-  line-height: 1.5;
-  font-weight: 700;
-  color: #102654;
-  -webkit-transform: translateX(8px);
-  -ms-transform: translateX(8px);
-  transform: translateX(8px);
+.subscription-card__price::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 42px;
+  margin-left: 14px;
+  background-image: url("../img/sprite/ruble.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .subscription-card__button {
@@ -2175,7 +2159,7 @@ button,
   grid-template-columns: 43.1% 56.9%;
   -ms-grid-rows: 1fr;
   grid-template-rows: 1fr;
-  padding: 121px 60px 50px;
+  padding: 120px 60px 50px;
 }
 
 .competition__content {
@@ -3708,6 +3692,7 @@ button,
     -webkit-column-gap: 0;
     -moz-column-gap: 0;
     column-gap: 0;
+    row-gap: 38px;
     padding: 0 118px;
   }
 
@@ -3716,7 +3701,7 @@ button,
   }
 
   .competition__wrapper {
-    padding: 100px 45px 50px;
+    padding: 101px 45px 50px;
   }
 
   .competition__content {
@@ -4219,7 +4204,7 @@ button,
   }
 
   .subscription-card__description {
-    margin-bottom: 47px;
+    margin-bottom: 53px;
   }
 
   .subscription-card__price {
@@ -4228,12 +4213,14 @@ button,
     line-height: 1.5;
   }
 
-  .subscription-card__price::after {
+  .subscription-card__price::before {
     font-size: 80px;
   }
 
-  .subscription-card__price span {
-    font-size: 48px;
+  .subscription-card__price::after {
+    width: 24px;
+    height: 33px;
+    margin-left: 10px;
   }
 
   .subscription-card__button {
@@ -4246,7 +4233,7 @@ button,
     -ms-grid-rows: (1fr)[2];
     grid-template-rows: repeat(2, 1fr);
     max-width: 500px;
-    padding: 72px 15px 30px;
+    padding: 71px 15px 30px;
   }
 
   .competition__content {
