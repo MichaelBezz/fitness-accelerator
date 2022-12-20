@@ -12,7 +12,6 @@
     <link rel="preload" href="./fonts/alumni-sans-semi-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/alumni-sans-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/alumni-sans-extra-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./fonts/rouble.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="icon" href="./favicon.ico">
     <link rel="icon" href="./favicon/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="./favicon/favicon-180.png">
@@ -28,7 +27,11 @@
             <a class="header__logo">
               <img src="./img/svg/logo.svg" width="122" height="44" alt="Логотип фитнес центр «Supergym».">
             </a>
-            <a class="header__phone" href="tel:88005555555">8-800-555-55-55</a>
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link" href="tel:88005555555">8-800-555-55-55</a>
+              </li>
+            </ul>
           </div>
 
           <section class="header__intro intro">
@@ -118,28 +121,19 @@
                     <li class="subscription__item subscription-card">
                       <h3 class="subscription-card__title">С тренером</h3>
                       <p class="subscription-card__description">12 занятий</p>
-                      <p class="subscription-card__price" data-price="5000">
-                        5000
-                        <span>i</span>
-                      </p>
+                      <p class="subscription-card__price" data-price="5000">5000</p>
                       <a class="subscription-card__button button button--colored" href="#todo">Купить абонемент</a>
                     </li>
                     <li class="subscription__item subscription-card">
                       <h3 class="subscription-card__title">Дневной</h3>
                       <p class="subscription-card__description">с 8:00 до 17:00 </p>
-                      <p class="subscription-card__price" data-price="1700">
-                        1700
-                        <span>i</span>
-                      </p>
+                      <p class="subscription-card__price" data-price="1700">1700</p>
                       <a class="subscription-card__button button button--colored" href="#todo">Купить абонемент</a>
                     </li>
                     <li class="subscription__item subscription-card">
                       <h3 class="subscription-card__title">Полный день</h3>
                       <p class="subscription-card__description">с 8:00 до 22:00</p>
-                      <p class="subscription-card__price" data-price="2700">
-                        2700
-                        <span>i</span>
-                      </p>
+                      <p class="subscription-card__price" data-price="2700">2700</p>
                       <a class="subscription-card__button button button--colored" href="#todo">Купить абонемент</a>
                     </li>
                   </ul>
@@ -150,28 +144,19 @@
                     <li class="subscription__item subscription-card">
                       <h3 class="subscription-card__title">С тренером</h3>
                       <p class="subscription-card__description">12 занятий</p>
-                      <p class="subscription-card__price" data-price="25000">
-                        25000
-                        <span>i</span>
-                      </p>
+                      <p class="subscription-card__price" data-price="25000">25000</p>
                       <a class="subscription-card__button button button--colored" href="#todo">Купить абонемент</a>
                     </li>
                     <li class="subscription__item subscription-card">
                       <h3 class="subscription-card__title">Дневной</h3>
                       <p class="subscription-card__description">с 8:00 до 17:00 </p>
-                      <p class="subscription-card__price" data-price="8500">
-                        8500
-                        <span>i</span>
-                      </p>
+                      <p class="subscription-card__price" data-price="8500">8500</p>
                       <a class="subscription-card__button button button--colored" href="#todo">Купить абонемент</a>
                     </li>
                     <li class="subscription__item subscription-card">
                       <h3 class="subscription-card__title">Полный день</h3>
                       <p class="subscription-card__description">с 8:00 до 22:00</p>
-                      <p class="subscription-card__price" data-price="13500">
-                        13500
-                        <span>i</span>
-                      </p>
+                      <p class="subscription-card__price" data-price="13500">13500</p>
                       <a class="subscription-card__button button button--colored" href="#todo">Купить абонемент</a>
                     </li>
                   </ul>
@@ -182,28 +167,19 @@
                     <li class="subscription__item subscription-card">
                       <h3 class="subscription-card__title">С тренером</h3>
                       <p class="subscription-card__description">12 занятий</p>
-                      <p class="subscription-card__price" data-price="50000">
-                        50000
-                        <span>i</span>
-                      </p>
+                      <p class="subscription-card__price" data-price="50000">50000</p>
                       <a class="subscription-card__button button button--colored" href="#todo">Купить абонемент</a>
                     </li>
                     <li class="subscription__item subscription-card">
                       <h3 class="subscription-card__title">Дневной</h3>
                       <p class="subscription-card__description">с 8:00 до 17:00 </p>
-                      <p class="subscription-card__price" data-price="17000">
-                        17000
-                        <span>i</span>
-                      </p>
+                      <p class="subscription-card__price" data-price="17000">17000</p>
                       <a class="subscription-card__button button button--colored" href="#todo">Купить абонемент</a>
                     </li>
                     <li class="subscription__item subscription-card">
                       <h3 class="subscription-card__title">Полный день</h3>
                       <p class="subscription-card__description">с 8:00 до 22:00</p>
-                      <p class="subscription-card__price" data-price="27000">
-                        27000
-                        <span>i</span>
-                      </p>
+                      <p class="subscription-card__price" data-price="27000">27000</p>
                       <a class="subscription-card__button button button--colored" href="#todo">Купить абонемент</a>
                     </li>
                   </ul>
@@ -606,15 +582,13 @@
           </a>
 
           <nav class="footer__navigation navigation">
-            <ul class="navigation__list navigation__list--main">
+            <ul class="navigation__list">
               <li class="navigation__item">
                 <a class="navigation__link" href="#todo">Услуги</a>
               </li>
               <li class="navigation__item">
                 <a class="navigation__link" href="#todo">Абонементы</a>
               </li>
-            </ul>
-            <ul class="navigation__list navigation__list--secondary">
               <li class="navigation__item">
                 <a class="navigation__link" href="#todo">Акции</a>
               </li>

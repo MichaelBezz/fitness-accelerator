@@ -1254,14 +1254,6 @@ button.swiper-pagination-bullet {
 }
 
 @font-face {
-  font-family: "Rouble";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/rouble.woff2") format("woff2"), url("../fonts/rouble.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
   font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 300;
@@ -1479,14 +1471,6 @@ button,
   flex-grow: 1;
 }
 
-.rouble {
-  font-family: "Rouble", "Arial", sans-serif;
-  /* stylelint-disable */
-  text-transform: lowercase !important;
-  font-weight: 400 !important;
-  /* stylelint-enable */
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -1632,11 +1616,11 @@ button,
   transition: opacity 0.3s ease;
 }
 
-.header__logo.focus-visible:focus {
+.header__logo[href].focus-visible:focus {
   opacity: 0.8;
 }
 
-.header__logo.focus-visible:active {
+.header__logo[href].focus-visible:active {
   opacity: 0.6;
 }
 
@@ -1645,7 +1629,30 @@ button,
   height: 44px;
 }
 
-.header__phone {
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 180px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.header__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.header__link {
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-style: normal;
   font-size: 26px;
@@ -1658,11 +1665,11 @@ button,
   transition: color 0.3s ease;
 }
 
-.header__phone.focus-visible:focus {
+.header__link.focus-visible:focus {
   color: #14367a;
 }
 
-.header__phone.focus-visible:active {
+.header__link.focus-visible:active {
   color: #030a1a;
 }
 
@@ -2087,7 +2094,7 @@ button,
 
 .subscription-card__description {
   margin: 0;
-  margin-bottom: 57px;
+  margin-bottom: 65px;
   font-size: 16px;
   line-height: 1.5;
   color: #495a7d;
@@ -2110,10 +2117,10 @@ button,
   color: #103aae;
 }
 
-.subscription-card__price::after {
+.subscription-card__price::before {
   z-index: -1;
   position: absolute;
-  top: -22px;
+  top: -28px;
   left: -18px;
   content: attr(data-price);
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -2124,16 +2131,16 @@ button,
   color: rgba(232, 232, 232, 0.5);
 }
 
-.subscription-card__price span {
-  font-family: "Rouble", "Arial", sans-serif;
-  font-style: normal;
-  font-size: 60px;
-  line-height: 1.5;
-  font-weight: 700;
-  color: #102654;
-  -webkit-transform: translateX(8px);
-  -ms-transform: translateX(8px);
-  transform: translateX(8px);
+.subscription-card__price::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 42px;
+  margin-left: 14px;
+  background-image: url("../img/sprite/ruble.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .subscription-card__button {
@@ -2152,7 +2159,7 @@ button,
   grid-template-columns: 43.1% 56.9%;
   -ms-grid-rows: 1fr;
   grid-template-rows: 1fr;
-  padding: 121px 60px 50px;
+  padding: 120px 60px 50px;
 }
 
 .competition__content {
@@ -2447,10 +2454,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 10px 11.5%;
+  padding: 20% 11.5% 30px;
   background-color: rgba(16, 38, 84, 0.9);
 }
 
@@ -3384,11 +3388,11 @@ button,
   margin-top: 2px;
 }
 
-.footer__logo.focus-visible:focus {
+.footer__logo[href].focus-visible:focus {
   opacity: 0.8;
 }
 
-.footer__logo.focus-visible:active {
+.footer__logo[href].focus-visible:active {
   opacity: 0.6;
 }
 
@@ -3398,10 +3402,8 @@ button,
 }
 
 .navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 8px;
+  margin-left: 20px;
+  margin-right: 12px;
 }
 
 .navigation__list {
@@ -3413,10 +3415,6 @@ button,
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-.navigation__list--main {
-  margin-right: 28px;
 }
 
 .navigation__item:not(:last-child) {
@@ -3482,6 +3480,11 @@ button,
 }
 
 @media (max-width: 1279px) {
+  .coach-card:hover .coach-card__hover,
+  .coach-card:focus-within .coach-card__hover {
+    padding: 14px 11.5%;
+  }
+
   .trial__form {
     width: 100%;
   }
@@ -3525,7 +3528,20 @@ button,
     height: 17px;
   }
 
-  .header__phone {
+  .header__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    max-width: 60%;
+    margin-right: -10px;
+  }
+
+  .header__item {
+    margin-right: 10px;
+  }
+
+  .header__link {
     font-size: 24px;
     line-height: 1.2;
     font-weight: 700;
@@ -3676,6 +3692,7 @@ button,
     -webkit-column-gap: 0;
     -moz-column-gap: 0;
     column-gap: 0;
+    row-gap: 38px;
     padding: 0 118px;
   }
 
@@ -3684,7 +3701,7 @@ button,
   }
 
   .competition__wrapper {
-    padding: 100px 45px 50px;
+    padding: 101px 45px 50px;
   }
 
   .competition__content {
@@ -3761,6 +3778,11 @@ button,
     -moz-column-gap: 30px;
     column-gap: 30px;
     row-gap: 30px;
+  }
+
+  .coach-card:hover .coach-card__hover,
+  .coach-card:focus-within .coach-card__hover {
+    padding: 10% 11.5%;
   }
 
   .advantages__wrapper {
@@ -3970,10 +3992,6 @@ button,
     height: 18px;
   }
 
-  .navigation__list--main {
-    margin-right: 18px;
-  }
-
   .navigation__item:not(:last-child) {
     margin-right: 18px;
   }
@@ -4010,6 +4028,11 @@ button,
   .period__time {
     font-size: 24px;
   }
+
+  .coach-card:hover .coach-card__hover,
+  .coach-card:focus-within .coach-card__hover {
+    padding: 20% 11.5% 30px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -4044,7 +4067,7 @@ button,
     height: 24px;
   }
 
-  .header__phone {
+  .header__link {
     font-size: 20px;
     line-height: 1.2;
     font-weight: 600;
@@ -4181,7 +4204,7 @@ button,
   }
 
   .subscription-card__description {
-    margin-bottom: 47px;
+    margin-bottom: 53px;
   }
 
   .subscription-card__price {
@@ -4190,12 +4213,14 @@ button,
     line-height: 1.5;
   }
 
-  .subscription-card__price::after {
+  .subscription-card__price::before {
     font-size: 80px;
   }
 
-  .subscription-card__price span {
-    font-size: 48px;
+  .subscription-card__price::after {
+    width: 24px;
+    height: 33px;
+    margin-left: 10px;
   }
 
   .subscription-card__button {
@@ -4208,7 +4233,7 @@ button,
     -ms-grid-rows: (1fr)[2];
     grid-template-rows: repeat(2, 1fr);
     max-width: 500px;
-    padding: 72px 15px 30px;
+    padding: 71px 15px 30px;
   }
 
   .competition__content {
@@ -4280,7 +4305,7 @@ button,
 
   .coach-card:hover .coach-card__hover,
   .coach-card:focus-within .coach-card__hover {
-    padding: 10px;
+    padding: 18.5% 4% 14px;
   }
 
   .coach-card__hover {
@@ -4579,27 +4604,25 @@ button,
   }
 
   .navigation {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    -webkit-column-gap: 30px;
-    -moz-column-gap: 30px;
-    column-gap: 30px;
     margin: 0;
-    margin-bottom: 33px;
+    margin-bottom: 25px;
   }
 
   .navigation__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    display: block;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
   }
 
-  .navigation__list--main {
-    margin-top: 40px;
-    margin-right: 0;
+  .navigation__list::before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 40px;
   }
 
   .navigation__item:not(:last-child) {
@@ -4640,11 +4663,11 @@ button,
     border-color: #ffffff;
   }
 
-  .header__logo:hover:not(.focus-visible) {
+  .header__logo[href]:hover:not(.focus-visible) {
     opacity: 0.8;
   }
 
-  .header__phone:hover:not(.focus-visible) {
+  .header__link:hover:not(.focus-visible) {
     color: #14367a;
   }
 
@@ -4712,7 +4735,7 @@ button,
     color: #ed0233;
   }
 
-  .footer__logo:hover:not(.focus-visible) {
+  .footer__logo[href]:hover:not(.focus-visible) {
     opacity: 0.8;
   }
 
