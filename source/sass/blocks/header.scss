@@ -74,7 +74,34 @@
   }
 }
 
-.header__phone {
+.header__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  max-width: 180px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @include vp-1199 {
+    flex-direction: row;
+    max-width: 60%;
+    margin-right: -10px;
+  }
+}
+
+.header__item {
+  @include vp-1199 {
+    margin-right: 10px;
+  }
+}
+
+.header__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.header__link {
   font-family: $ff-secondary;
   font-style: normal;
   font-size: 26px;
