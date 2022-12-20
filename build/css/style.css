@@ -2447,10 +2447,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 10px 11.5%;
+  padding: 20% 11.5% 30px;
   background-color: rgba(16, 38, 84, 0.9);
 }
 
@@ -3482,6 +3479,11 @@ button,
 }
 
 @media (max-width: 1279px) {
+  .coach-card:hover .coach-card__hover,
+  .coach-card:focus-within .coach-card__hover {
+    padding: 14px 11.5%;
+  }
+
   .trial__form {
     width: 100%;
   }
@@ -3763,6 +3765,11 @@ button,
     row-gap: 30px;
   }
 
+  .coach-card:hover .coach-card__hover,
+  .coach-card:focus-within .coach-card__hover {
+    padding: 10% 11.5%;
+  }
+
   .advantages__wrapper {
     max-width: 1000px;
     padding: 92px 45px 82px;
@@ -4009,6 +4016,11 @@ button,
   .period__day,
   .period__time {
     font-size: 24px;
+  }
+
+  .coach-card:hover .coach-card__hover,
+  .coach-card:focus-within .coach-card__hover {
+    padding: 20% 11.5% 30px;
   }
 }
 
@@ -4280,7 +4292,7 @@ button,
 
   .coach-card:hover .coach-card__hover,
   .coach-card:focus-within .coach-card__hover {
-    padding: 10px;
+    padding: 18.5% 4% 14px;
   }
 
   .coach-card__hover {
