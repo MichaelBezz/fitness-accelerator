@@ -3,14 +3,11 @@
   grid-template-columns: 1fr;
   grid-template-rows: min-content 1fr min-content;
   row-gap: 4px;
+  min-height: 211px;
   padding: 18px 28px;
   border: 7px solid $color-default-white;
   border-image-source: $red-to-blue-promo-card;
   border-image-slice: 1;
-
-  @include vp-1199 {
-    min-height: 211px;
-  }
 
   @include vp-767 {
     justify-items: center;
@@ -82,6 +79,8 @@
 .promo-card--main {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  min-height: 462px;
 
   @include vp-1199 {
     grid-template-columns: 41.2% 58.8%;
@@ -90,6 +89,7 @@
   @include vp-767 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    min-height: 598px;
   }
 }
 
@@ -158,7 +158,11 @@
 }
 
 .promo-card__image {
+  position: relative;
+  width: 100%;
+  height: 100%;
   aspect-ratio: 280/462;
+  overflow: hidden;
 
   @include vp-1199 {
     aspect-ratio: 399/462;
@@ -170,6 +174,13 @@
 }
 
 .promo-card__image img {
-  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  width: auto;
+  min-height: 100%;
   height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
 }
