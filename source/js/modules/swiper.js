@@ -6,7 +6,7 @@ const createSwiper = (selector, options = {}) =>
 
 const removeFocusFromDuplicateSlides = (swiper) => {
   const duplicateSlides = swiper.querySelectorAll('.swiper-slide-duplicate');
-  duplicateSlides.forEach((item) =>item.removeAttribute('tabindex'));
+  duplicateSlides.forEach((item) => item.removeAttribute('tabindex'));
 };
 
 export const initializeSwipers = () => {
